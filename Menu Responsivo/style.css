@@ -1,0 +1,125 @@
+/*Font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap");
+
+/*Project*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: darkslateblue;
+}
+
+nav {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 20px;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+  width: 250px;
+  justify-content: space-between;
+}
+
+.links li {
+  margin-left: 5px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(41, 221, 221);
+  transition: all 1s;
+}
+
+.login button {
+  background-color: rgb(38, 206, 206);
+  padding: 10px;
+  border-radius: 5px;
+  border-color: black;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login button:hover {
+  background-color: rgb(27, 152, 161);
+  transition: all 0.5s;
+}
+
+.mobile-icon img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.mobile-icon button {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+.mobile-version-menu{
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .links {
+    display: none;
+  }
+
+  .login {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 50px;
+  }
+
+  .mobile-icon {
+    display: block;
+  }
+
+  .mobile-version-menu{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    background-color: aliceblue;
+  }
+
+  .mobile-version-menu ul {
+    list-style: none;
+    align-items: center;
+    text-align: end;
+  }
+
+  .login-mobile button{
+    width: 60px;
+    border-color: black;
+    border-radius: 5px;
+    background-color: rgb(38, 206, 206);
+    outline: none;
+  }
+
+  .mobile-version-menu{
+    display: none;
+  }
+}
